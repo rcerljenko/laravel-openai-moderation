@@ -16,7 +16,7 @@ composer require rcerljenko/laravel-openai-moderation
 1. Publish config and translation files.
 
 ```sh
-php artisan vendor:publish --provider="RCerljenko\LaravelOpenAIModeration\LaravelOpenAIModerationServiceProvider"
+php artisan vendor:publish --provider="RCerljenko\LaravelOpenAIModeration\ServiceProvider"
 ```
 
 2. Set your OpenAI API key and enable package via newly created config file => `config/openai.php`

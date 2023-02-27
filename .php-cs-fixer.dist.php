@@ -51,7 +51,7 @@ return $config->setFinder($finder)
 		'lowercase_static_reference' => true,
 		'magic_constant_casing' => true,
 		'magic_method_casing' => true,
-		'method_argument_space' => ['on_multiline' => 'ensure_single_line'],
+		'method_argument_space' => true,
 		'native_function_casing' => true,
 		'native_function_type_declaration_casing' => true,
 		'new_with_braces' => ['named_class' => false, 'anonymous_class' => false],

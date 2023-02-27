@@ -30,7 +30,7 @@
 	"extra": {
 		"laravel": {
 			"providers": [
-				"RCerljenko\\LaravelOpenAIModeration\\LaravelOpenAIModerationServiceProvider"
+				"RCerljenko\\LaravelOpenAIModeration\\ServiceProvider"
 			]
 		}
 	},

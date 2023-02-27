@@ -14,7 +14,6 @@
 	"html.validate.styles": true,
 	"php.suggest.basic": true,
 	"php.validate.enable": true,
-	"intelephense.format.enable": false,
 	"php-cs-fixer.executablePath": "${workspaceFolder}/vendor/bin/php-cs-fixer",
 	"php-cs-fixer.executablePathWindows": "${workspaceFolder}\\vendor\\bin\\php-cs-fixer.bat",
 	"php-cs-fixer.onsave": true,

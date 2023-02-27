@@ -2,10 +2,12 @@
 
 namespace RCerljenko\LaravelOpenAIModeration\Rules;
 
-use Illuminate\Contracts\Validation\InvokableRule;
+use Closure;
+use Stringable;
+use Illuminate\Contracts\Validation\ValidationRule;
 use RCerljenko\LaravelOpenAIModeration\Services\OpenAIHandler;
 
-class OpenAIModeration implements InvokableRule
+class OpenAIModeration implements Stringable, ValidationRule
 {
 	public function __toString(): string
 	{
@@ -15,7 +17,7 @@ class OpenAIModeration implements InvokableRule
 	/**
 	 * Run the validation rule.
 	 */
-	public function __invoke($attribute, $value, $fail): void
+	public function validate(string $attribute, mixed $value, Closure $fail): void
 	{
 		if (!$value || !config('openai.enabled')) {
 			return;
